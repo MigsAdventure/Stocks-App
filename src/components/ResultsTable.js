@@ -57,7 +57,7 @@ export default class ResultsTable extends Component {
                 <td className="col-xs-4" >{stock.name}</td>
                 <td className="col-xs-4" >{stock.exchange}</td>
                 <td className="col-xs-4">
-                  <Link to='/StockDetails'  onClick={this.stockDetails.bind(this, stock.symbol)} className="btn btn-success">Stats</Link>
+                  <Link to={`/StockDetails`}  onClick={this.stockDetails.bind(this, stock.symbol)} className="btn btn-success">Stats</Link>
                 </td>
               </tr>
             ))//end of map

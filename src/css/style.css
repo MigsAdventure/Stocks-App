@@ -38,8 +38,19 @@ h1 {
   color:white;
 }
 
+h2 {
+  color:white;
+}
+
+h2.col-xs-2 {
+  text-align: left;
+  padding-left:3em;
+  color:white;
+}
+
 table {
   color:black;
+
   background-color:skyblue;
   border:solid 1px white;
   box-shadow: 0 0 1px white,
@@ -49,6 +60,27 @@ table {
               0 0 5px white,
               0 0 10px white,
               0 0 12px white;
+}
+
+
+.detailsContainer {
+  color:white;
+}
+
+.detailsContainer.row div {
+  color: white;
+  font-size:3em;
+}
+
+#details {
+  margin-top:5em;
+  background: rgba(0,0,0.5);
+  box-shadow: 0 0 1px,
+              0 0 2px,
+              0 0 4px,
+              0 0 5px,
+              0 0 10px,
+              0 0 12px;
 }
 
 
