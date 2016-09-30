@@ -8,6 +8,7 @@
 body {
   text-align: center;
   margin: 0 auto;
+  height:100%;
 }
 
 input {
@@ -20,6 +21,34 @@ input {
 
 th,td {
   text-align: center;
+}
+
+#root {
+  height:100vh;
+}
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  background-image: url('http://media-us-west-motionelements.s3.amazonaws.com/m/s/101/996721/a-0360.jpg');
+  background-size:100%;
+  background-position: center;
+}
+
+h1 {
+  color:white;
+}
+
+table {
+  color:black;
+  background-color:skyblue;
+  border:solid 1px white;
+  box-shadow: 0 0 1px white,
+              0 0 2px white,
+              0 0 3px white,
+              0 0 4px white,
+              0 0 5px white,
+              0 0 10px white,
+              0 0 12px white;
 }
 
 

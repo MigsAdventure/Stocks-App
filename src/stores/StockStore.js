@@ -2,7 +2,7 @@ import {EventEmitter} from 'events';
 import AppDispatcher from '../AppDispatcher';
 
 let _results = [];
-
+let _details = '';
 class StockStore extends EventEmitter {
   constructor() {
     super();
@@ -22,7 +22,20 @@ class StockStore extends EventEmitter {
           this.emit('CHANGE')
           break;
         case 'GET_DETAILS' :
-          console.log('DETAILS ',payload.details);
+        let d = payload.details;
+          _details = {
+              status: d.Status,
+              name:  d.Name,
+              symbol: d.Symbol,
+              lastPrice:  d.LastPrice,
+              change: d.Change,
+              timeStamp: d.Timestamp,
+              changeYTD: d.ChangeYTD,
+              High: d.High,
+              Low: d.Low,
+              Open: d.Open
+            }
+        
           this.emit('CHANGE')
           break;
 
@@ -40,6 +53,10 @@ class StockStore extends EventEmitter {
 
   getAll() {
     return _results;
+  }
+
+  getDetail() {
+    return _details
   }
 
 }
